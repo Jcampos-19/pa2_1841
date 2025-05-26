@@ -1,0 +1,138 @@
+:root{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    --color1:#fff200;
+    --color2:#ffffff;
+    --color3:#44A1F2;
+    --color4:#ce3838;
+    font-family: "Oxygen", sans-serif;
+    background-image: url('img2/preview.jpg')
+}
+#contenedor{
+    width: 100%;
+    height: 100vh;
+}
+header{     
+    background-color: #fff200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:20px;
+    /*posicionamiento fijo*/
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;  
+}
+header a img{
+    height: 90px;   
+}
+nav{
+    padding-right: 40px;
+    font-size: 0.8em;
+}
+#menu,#redes{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;     
+}
+#menu li a, #redes li a{
+    text-decoration: wavy;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding:10px;
+}
+#menu li a:hover,#redes li a:hover{
+    color:var(--color2);
+}
+h5{
+    color:var(--color1);
+    margin-top: 120px;
+}
+main{
+    background-image: url('img/wall1.mp4');
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start; 
+       
+}
+section{
+    width:60%;    
+    text-align: center; 
+}
+section article img{
+    max-width: 90%;
+}
+section article p{
+    max-width: 90%;    
+    margin: auto;
+    padding: 5px;
+    font-size: 0.8em;
+    font-style: italic;   
+}
+section article h2{
+    /*posicionamiento adhesivo*/
+    position:sticky;
+    top:100px;
+    background-color: red;
+    z-index: 20;
+    padding: 10px;
+}
+aside{
+    width: 30%;    
+    text-align: center;   
+}
+aside img{
+    max-width: 70% ;
+}
+footer{  
+    background-image: url('img/fondo2.jpg');
+    color:var(--color2)
+}
+footer h4{
+    padding-top: 12px;
+    text-align: center;    
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+nav p{
+    text-align: center;
+}
+#promociones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start; 
+       
+}
+#fondo{
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+}
+.in {
+    color: #ffffff;
+    background-color: #ce3838;
+    border-radius: 10px;
+}
+.pro {
+    color: #ffffff;
+    background-color: #ce3838;
+    border-radius: 10px;
+}
